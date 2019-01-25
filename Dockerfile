@@ -9,7 +9,7 @@ RUN apk --update add --virtual build-dependencies gcc libc-dev linux-headers git
 	&& git clone https://github.com/ethereum/go-ethereum.git \
 	&& cd go-ethereum \
 	&& git checkout tags/v1.8.21 \
-	&& go install ./... \
-	&& apk del build-dependencies
+	&& go install ./...
+#	&& apk del build-dependencies
 
 ENTRYPOINT ["/bin/sh"]
