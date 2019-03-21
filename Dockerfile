@@ -1,5 +1,5 @@
-FROM ethereum/solc:0.5.2 as solc
-FROM golang:1.11-alpine as builder
+FROM ethereum/solc:0.5.6 as solc
+FROM golang:1.12-alpine as builder
 
 COPY --from=solc /usr/bin/solc /usr/bin/solc
 
@@ -8,7 +8,7 @@ RUN apk --update add --virtual build-dependencies gcc libc-dev linux-headers git
 	&& cd $GOPATH/src/github.com/ethereum \
 	&& git clone https://github.com/ethereum/go-ethereum.git \
 	&& cd go-ethereum \
-	&& git checkout tags/v1.8.21 \
+	&& git checkout tags/v1.8.23 \
 	&& go install ./...
 #	&& apk del build-dependencies
 
