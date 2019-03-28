@@ -1,4 +1,4 @@
-FROM ethereum/solc:0.5.6 as solc
+FROM ethereum/solc:0.5.7 as solc
 FROM golang:1.12-alpine as builder
 
 COPY --from=solc /usr/bin/solc /usr/bin/solc
