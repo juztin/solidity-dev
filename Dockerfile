@@ -1,7 +1,7 @@
-FROM ethereum/solc:0.5.7 as solc
+FROM ethereum/solc:0.5.8 as solc
 FROM golang:1.12-alpine as builder
 
-ARG GETH_VERSION=v1.8.26
+ARG GETH_VERSION=v1.8.27
 
 COPY --from=solc /usr/bin/solc /usr/bin/solc
 
