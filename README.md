@@ -22,6 +22,9 @@ Solidity development Docker image that includes:
 
 ##### other
 
+ - 0.6.2-1.9.10
+
+ - 0.5.16-1.9.10
  - 0.5.14-1.9.9
  - 0.5.11-1.9.3
  - 0.5.11-1.9.3

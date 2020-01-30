@@ -1,4 +1,4 @@
-FROM ethereum/solc:0.5.16 as solc
+FROM ethereum/solc:0.6.2 as solc
 FROM golang:1.13.5-alpine as builder
 
 ARG GETH_VERSION=v1.9.10
