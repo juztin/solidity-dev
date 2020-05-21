@@ -13,11 +13,11 @@ Solidity development Docker image that includes:
 
 ### Tags:
 
-##### current _(0.5.14-1.9.9)_
+##### current _(0.6.8-1.9.14)_
 
- - solc: `0.5.14`
- - Go-Ethereum: `1.9.9-stable`
- - Go: `1.13.5`
+ - solc: `0.6.8`
+ - Go-Ethereum: `1.9.14-stable`
+ - Go: `1.14`
 
 
 ##### other
